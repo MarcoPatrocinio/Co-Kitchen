@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class PerfilHomeScreen extends StatefulWidget{
+class PerfilConfigScreen extends StatefulWidget{
   final email;
-  const PerfilHomeScreen(this.email);
+  const PerfilConfigScreen(this.email);
 
   @override
-  _PerfilHomeScreenState createState() => _PerfilHomeScreenState(email);
+  _PerfilConfigScreenState createState() => _PerfilConfigScreenState(email);
 }
 
-class _PerfilHomeScreenState extends State<PerfilHomeScreen>{
+class _PerfilConfigScreenState extends State<PerfilConfigScreen>{
 
   final String email;
-  _PerfilHomeScreenState(this.email);
+  _PerfilConfigScreenState(this.email);
 
   @override
   void initState() {
@@ -37,8 +37,8 @@ class _PerfilHomeScreenState extends State<PerfilHomeScreen>{
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(5),
-                      child: Image(image: AssetImage('assets/images/UserEx.png'))
+                        padding: EdgeInsets.all(5),
+                        child: Image(image: AssetImage('assets/images/UserEx.png'))
                     ),
                     Padding(
                       padding: EdgeInsets.all(5),
